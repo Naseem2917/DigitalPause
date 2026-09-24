@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DigitalPause</string>
+    <string name="tagline">Pause. Think. Use Intentionally.</string>
+    <string name="accessibility_service_label">DigitalPause Shield Service</string>
+    <string name="accessibility_service_description">Detects foreground usage of protected applications to display mindful pauses when daily limits are reached and protect against short-form video doomscrolling. All processing occurs 100% locally on device.</string>
+    
+    <!-- Notification Channels -->
+    <string name="notification_channel_reminders">Limit Reminders</string>
+    <string name="notification_channel_reminders_desc">Notifications when you are approaching or have reached daily app limits.</string>
+    <string name="notification_channel_protection">Protection Status</string>
+    <string name="notification_channel_protection_desc">Real-time alerts for active shields, extra time, and parent overrides.</string>
+</resources>

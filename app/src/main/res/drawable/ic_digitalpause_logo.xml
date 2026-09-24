@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Squircle Gradient Background -->
+    <path android:pathData="M 36,8 L 84,8 A 28,28 0 0,1 112,36 L 112,84 A 28,28 0 0,1 84,112 L 36,112 A 28,28 0 0,1 8,84 L 8,36 A 28,28 0 0,1 36,8 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="120"
+                android:endY="120"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#4F46E5" />
+                <item android:offset="1.0" android:color="#3B82F6" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Concentric Calm Ring -->
+    <path
+        android:pathData="M 60,22 A 38,38 0 1,0 60,98 A 38,38 0 1,0 60,22"
+        android:strokeWidth="3.5"
+        android:strokeColor="#A5B4FC"
+        android:strokeAlpha="0.4"
+        android:strokeLineCap="round" />
+
+    <!-- Inner Zen Ring -->
+    <path
+        android:pathData="M 60,30 A 30,30 0 1,0 60,90 A 30,30 0 1,0 60,30"
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.25" />
+
+    <!-- Left Pause Bar -->
+    <path
+        android:pathData="M 51,44 L 51,44 A 4,4 0 0,1 55,48 L 55,72 A 4,4 0 0,1 51,76 L 51,76 A 4,4 0 0,1 47,72 L 47,48 A 4,4 0 0,1 51,44 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Right Pause Bar -->
+    <path
+        android:pathData="M 69,44 L 69,44 A 4,4 0 0,1 73,48 L 73,72 A 4,4 0 0,1 69,76 L 69,76 A 4,4 0 0,1 65,72 L 65,48 A 4,4 0 0,1 69,44 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Zen Mindful Spark -->
+    <path
+        android:pathData="M 60,27.5 A 2.5,2.5 0 1,0 60,32.5 A 2.5,2.5 0 1,0 60,27.5"
+        android:fillColor="#38BDF8" />
+</vector>

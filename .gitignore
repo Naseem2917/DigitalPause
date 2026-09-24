@@ -1,34 +1,46 @@
-# Gradle files
+# ─── Gradle build outputs ───────────────────────────────────────────────────
 .gradle/
 build/
+app/build/
 
-# Local configuration file (sdk path, etc)
+# ─── Local machine config ────────────────────────────────────────────────────
 local.properties
+*.local.properties
 
-# Log/OS Files
-*.log
+# ─── Kotlin daemon / session ─────────────────────────────────────────────────
+.kotlin/
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
+# ─── Android Studio / IntelliJ ───────────────────────────────────────────────
 .idea/
+*.iml
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 
-# Keystore files
+# ─── Compiled outputs ────────────────────────────────────────────────────────
+*.apk
+*.aab
+output-metadata.json
+
+# ─── C/C++ native build ──────────────────────────────────────────────────────
+.externalNativeBuild/
+.cxx/
+captures/
+
+# ─── Signing / secrets ───────────────────────────────────────────────────────
 *.jks
 *.keystore
-
-# Google Services (e.g. APIs or Firebase)
+*.p12
 google-services.json
 
-# Android Profiling
+# ─── Logs & profiling ────────────────────────────────────────────────────────
+*.log
 *.hprof
+
+# ─── OS junk ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── Machine-specific scripts ────────────────────────────────────────────────
+deploy.bat
