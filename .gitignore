@@ -1,46 +1,70 @@
-# ─── Gradle build outputs ───────────────────────────────────────────────────
+# ─── Gradle Build Outputs & Caches ───────────────────────────────────────────
 .gradle/
 build/
+**/build/
 app/build/
 
-# ─── Local machine config ────────────────────────────────────────────────────
+# ─── Local Machine Configs & Secrets ──────────────────────────────────────────
 local.properties
 *.local.properties
+.env
+.env.*
+secrets.properties
 
-# ─── Kotlin daemon / session ─────────────────────────────────────────────────
+# ─── Kotlin Daemon & Compiler ────────────────────────────────────────────────
 .kotlin/
+*.class
+*.dex
 
-# ─── Android Studio / IntelliJ ───────────────────────────────────────────────
+# ─── Android Studio & IntelliJ IDEA ──────────────────────────────────────────
 .idea/
 *.iml
+*.ipr
+*.iws
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
+.navigation/
 
-# ─── Compiled outputs ────────────────────────────────────────────────────────
+# ─── Visual Studio Code & Editors ────────────────────────────────────────────
+.vscode/
+*~
+*.swp
+*.swo
+*.bak
+
+# ─── Compiled Android Artifacts (Binaries) ───────────────────────────────────
 *.apk
+*.ap_
 *.aab
 output-metadata.json
 
-# ─── C/C++ native build ──────────────────────────────────────────────────────
+# ─── C/C++ Native Builds ─────────────────────────────────────────────────────
 .externalNativeBuild/
 .cxx/
 captures/
+cmake/
 
-# ─── Signing / secrets ───────────────────────────────────────────────────────
+# ─── Signing Keys & Keystores ────────────────────────────────────────────────
 *.jks
 *.keystore
 *.p12
+*.key
 google-services.json
 
-# ─── Logs & profiling ────────────────────────────────────────────────────────
+# ─── Logs, Profiling & Crash Reports ─────────────────────────────────────────
 *.log
 *.hprof
+hs_err_pid*.log
 
-# ─── OS junk ─────────────────────────────────────────────────────────────────
+# ─── OS-Generated Files ──────────────────────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
 Thumbs.db
+ehthumbs.db
 Desktop.ini
 
-# ─── Machine-specific scripts ────────────────────────────────────────────────
+# ─── Machine-Specific Scripts & Scratch ──────────────────────────────────────
 deploy.bat
+*.tmp

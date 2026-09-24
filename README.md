@@ -1,181 +1,208 @@
+# DigitalPause 🛑
+
 <div align="center">
 
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="100" alt="DigitalPause Logo" />
+### *"Pause. Think. Use Intentionally."*
 
-# DigitalPause
+A mindful, privacy-first screen time companion and doomscrolling blocker for Android.  
+**100% Offline • No Accounts • Zero Tracking • Open Source**
 
-### "Pause. Think. Use Intentionally."
+---
 
-**A mindful screen-time companion for Android — 100% offline, no accounts, no tracking.**
-
-[![Release](https://img.shields.io/github/v/release/Naseem2917/DigitalPause?label=Latest%20Release&color=4338CA)](https://github.com/Naseem2917/DigitalPause/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Naseem2917/DigitalPause/total?color=0D9488)](https://github.com/Naseem2917/DigitalPause/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Android](https://img.shields.io/badge/Android-8.0%2B-green.svg)](https://android.com)
+[![Latest Release](https://img.shields.io/github/v/release/Naseem2917/DigitalPause?label=Latest%20Release&color=4F46E5&style=for-the-badge)](https://github.com/Naseem2917/DigitalPause/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-APK-0D9488?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Naseem2917/DigitalPause/releases/latest)
+[![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://android.com)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 </div>
 
 ---
 
-## 📲 Download & Install
+## 📥 Download APK (Direct Release)
 
-> **No Play Store needed.** Download the APK directly from GitHub Releases.
+> 🚀 **You do not need Google Play Store!** You can download the latest installable APK file directly from GitHub Releases.
 
-### ➡️ [Download Latest APK →](https://github.com/Naseem2917/DigitalPause/releases/latest)
+<div align="center">
 
-**Installation steps:**
-1. Click the link above → tap `DigitalPause-v*.apk` under **Assets**
-2. On your phone: **Settings → Install unknown apps** → allow your browser
-3. Open the downloaded APK and tap **Install**
-4. Follow the in-app setup (takes ~2 minutes)
+### 👉 [**Click Here to Download Latest APK (v1.0.0)**](https://github.com/Naseem2917/DigitalPause/releases/latest) 👈
 
-> ⚠️ ColorOS / OPPO users: Settings → Privacy → Special app access → Install unknown apps
+#### 📦 [Browse All GitHub Releases & Versions](https://github.com/Naseem2917/DigitalPause/releases)
 
----
+</div>
 
-## ✨ Features
+### 📲 How to Download & Install on Your Phone:
 
-### 📊 Real Screen Time Dashboard
-- **Accurate today & yesterday screen time** — powered by `UsageEvents` API (matches Android Digital Wellbeing)
-- Per-app usage breakdown with real app icons
-- Phone unlock count (debounced, accurate)
-- Weekly Mon–Sun bar chart
-- Day-by-day navigation
-
-### ⏱️ App Daily Limits
-- Set custom daily time limits per app (5 min / 15 min / 30 min / Custom)
-- When limit is reached → mindful pause screen appears
-- **Extra Time:** up to **30 minutes/day free** without a PIN; more requires Parent PIN
-- Limits screen shows live usage vs. limit progress bar
-- Pause / resume individual limits
-
-### 🚫 Short-Video Protection
-- **YouTube Shorts** → automatically presses Back when Shorts feed is detected
-- **Instagram Reels** → automatically presses Back when Reels viewer is open
-- Detects via accessibility node IDs (same approach as curbox-android)
-- 3-second cooldown prevents repeated back-presses
-- Can be toggled on/off in Settings
-
-### 🔐 Parent PIN
-- 6-digit parent PIN set during onboarding
-- Protects: extra time beyond 30 min/day, limit overrides
-- PIN entry uses Android system numeric keyboard (secure, no custom keypad)
-
-### 📱 Suggested Apps Onboarding
-- Suggests commonly distracting apps actually installed on your device
-- **Suggested ≠ Limited** — no limit is ever created without your explicit action
-
-### 🎨 Design
-- Deep Indigo / Mindful Teal / Gentle Amber color palette (Stitch-designed)
-- Light & Dark mode with system follow option
-- Inter typography, pill buttons, smooth animations
-- 100% Jetpack Compose UI
-
-### 🔒 Privacy
-- **Fully offline** — zero network requests
-- **No account required** — no email, no sign-up
-- **No analytics or tracking** — ever
-- All data stored locally on device (SharedPreferences)
+1. **Download APK**:
+   - Tap the **[Latest Release](https://github.com/Naseem2917/DigitalPause/releases/latest)** link above.
+   - Scroll down to the **Assets** section at the bottom of the release notes.
+   - Tap on `DigitalPause.apk` (or `app-debug.apk` / `app-release.apk`) to download.
+2. **Allow Installation from Unknown Sources**:
+   - If your browser (Chrome/Brave/Firefox) asks *"File might be harmful"* or *"For your security, your phone is not allowed to install unknown apps"*, tap **Settings** and enable **"Allow from this source"**.
+3. **Install & Launch**:
+   - Tap **Install** and open **DigitalPause**.
+4. **Complete Initial Setup**:
+   - Walk through the guided 2-minute onboarding to set your 6-digit Parent PIN and grant necessary system permissions.
 
 ---
 
-## 🏗️ Architecture
+## 💡 About DigitalPause
+
+Most app blockers are punitive, frustrating, and easy to delete in anger. **DigitalPause** takes a different approach: **mindful friction**.
+
+Instead of hard-locking your device, DigitalPause:
+1. Gives you **accurate, truthful insights** into your real screen time.
+2. Provides a **breathing pause** when daily limits are reached, helping you reflect before continuing.
+3. Automatically breaks **compulsive doomscrolling loops** on YouTube Shorts and Instagram Reels by gently backing you out of the infinite feed.
+4. Operates **100% on-device** — your screen time habits and personal data never leave your phone.
+
+---
+
+## ✨ Features & Capabilities
+
+### 📊 Truthful Screen Time Dashboard
+- **Digital Wellbeing Parity**: Calculated via Android's low-level `UsageEvents` stream — accurately accounts for foreground/background transitions and eliminates the 24h+ accumulation bugs seen in naive blockers.
+- **Today vs. Yesterday**: Immediate day-over-day screen time delta.
+- **Per-App Breakdown**: High-resolution tracking with native app icons and exact minutes spent.
+- **Device Unlock Counter**: Debounced counter tracking how many times you wake and unlock your device daily.
+- **7-Day Weekly Chart**: Interactive Monday–Sunday usage bars to spot weekly habits.
+
+### ⏱️ Custom Daily App Limits
+- Set custom daily allowances per app (e.g. 15m, 30m, 1h, or custom minutes).
+- **Mindful Pause Overlay**: When time expires, a serene breathing visualizer appears rather than an aggressive block screen.
+- **Emergency Extra Time**: Users can claim up to **30 minutes of free emergency extension per day** without a PIN. Any extension beyond 30 minutes requires the Master PIN.
+- Real-time limit progress bars in the Limits tab.
+
+### 🚫 Doomscrolling & Short-Video Blocker
+- **YouTube Shorts Protection**: Instantly detects when YouTube Shorts playback begins and executes a gentle Back action to return to your subscriptions/home feed.
+- **Instagram Reels Protection**: Detects the Reels viewer and auto-returns to the main feed.
+- **Smart Cooldown**: 3-second debounce window prevents back-button loops or visual flickering.
+- Fully toggleable in Settings.
+
+### 🔐 Parent / Master PIN Protection
+- 6-digit master PIN established during onboarding.
+- Protects:
+  - Modifying existing limits
+  - Changing short-video protection settings
+  - Bypassing daily limits beyond the 30-minute grace buffer
+- Native numeric entry with error feedback and lockout protection.
+
+### 🛡️ 100% Offline & Private by Design
+- **No Internet Permission**: The app doesn't even declare `android.permission.INTERNET` in its manifest. It cannot send data anywhere.
+- **No Analytics / Telemetry**: No Firebase, no Google Analytics, no third-party trackers.
+- **No Cloud Accounts**: No email, passwords, phone numbers, or social logins required.
+
+---
+
+## 🏗️ Architecture & Tech Stack
 
 ```
 DigitalPause/
 ├── app/src/main/java/com/digitalpause/app/
 │   ├── data/
-│   │   ├── UsageStatsRepository.kt   # Real screen time via UsageEvents
-│   │   └── PreferencesManager.kt     # Local-first persistence
+│   │   ├── UsageStatsRepository.kt       # UsageEvents-based screen time engine
+│   │   ├── PreferencesManager.kt         # Local SharedPreferences & migrations
+│   │   └── PasswordManager.kt            # Salted hash PIN authentication
 │   ├── service/
-│   │   ├── DigitalPauseAccessibilityService.kt  # App limits + short-video back-press
-│   │   └── ShortVideoDetector.kt                # YouTube/Instagram Reels detection
+│   │   ├── DigitalPauseAccessibilityService.kt # Foreground detection & auto-back action
+│   │   └── ShortVideoDetector.kt         # Node tree view ID inspector (curbox approach)
 │   ├── ui/
-│   │   ├── dashboard/    # Main screen — screen time, most used apps
-│   │   ├── limits/       # Set / manage / view app limits
-│   │   ├── settings/     # Protection settings, parent PIN, theme
-│   │   ├── block/        # Mindful pause / limit reached screen
-│   │   ├── activity/     # App Activity Details (view all, weekly chart)
-│   │   └── onboarding/   # Welcome → PIN → Permissions → Suggested Apps
-│   └── model/            # AppLimit, AppUsageInfo, AppSettings, etc.
+│   │   ├── dashboard/                    # Screen time stats, weekly charts, app ranking
+│   │   ├── limits/                       # App limit cards, creation & editing
+│   │   ├── block/                        # Mindful breath visualizer & pause screen
+│   │   ├── activity/                     # Detailed per-app daily & weekly analytics
+│   │   ├── onboarding/                   # Welcome -> PIN setup -> Permissions guide
+│   │   ├── settings/                     # Toggles, PIN reset, about screen
+│   │   └── theme/                        # Material 3 Stitch design system
+│   └── model/                            # Data classes (AppLimit, UsageInfo, Settings)
 ```
 
-**Tech Stack:**
-- Language: **Kotlin**
-- UI: **Jetpack Compose** (Material 3)
-- Navigation: **Navigation Compose**
-- State: **StateFlow + ViewModel**
-- Persistence: **SharedPreferences** (local only)
-- Screen Time: **UsageStatsManager.queryEvents()**
-- Short-video: **AccessibilityService + findAccessibilityNodeInfosByViewId()**
+- **Language**: Kotlin 2.0
+- **UI Framework**: Jetpack Compose + Material Design 3
+- **Design System**: Tailored Deep Indigo (`#312E81`) / Mindful Teal (`#0D9488`) / Gentle Amber
+- **State Management**: Kotlin `StateFlow` + Android Architecture Components `ViewModel`
+- **Detection Engine**: Android `AccessibilityService` with `findAccessibilityNodeInfosByViewId`
+- **Screen Time Engine**: Android `UsageStatsManager.queryEvents()` with interactive session reconstruction
 
 ---
 
-## 🔧 Required Permissions
+## 🔒 Permissions Explained
 
-| Permission | Why |
-|-----------|-----|
-| `PACKAGE_USAGE_STATS` | Read per-app screen time (user must grant in Settings) |
-| `BIND_ACCESSIBILITY_SERVICE` | Detect app foreground + short-video viewer |
-| `SYSTEM_ALERT_WINDOW` | Show block screen over other apps |
-| `RECEIVE_BOOT_COMPLETED` | Restart protection service after reboot |
-| `POST_NOTIFICATIONS` | Near-limit reminders (Android 13+) |
+| Permission | Android Name | Why It Is Needed |
+| :--- | :--- | :--- |
+| **Usage Access** | `PACKAGE_USAGE_STATS` | Required to read daily per-app usage times and unlock counts from Android system. |
+| **Accessibility Service** | `BIND_ACCESSIBILITY_SERVICE` | Required to detect foreground package changes and identify YouTube Shorts / Instagram Reels containers. |
+| **Display Over Other Apps** | `SYSTEM_ALERT_WINDOW` | Required to display the mindful pause screen when your daily limit expires. |
+| **Run at Startup** | `RECEIVE_BOOT_COMPLETED` | Ensures your limits and protection automatically resume after your phone restarts. |
+| **Notifications** | `POST_NOTIFICATIONS` | Alerts you when you have 5 minutes remaining before reaching an app limit. |
 
 ---
 
-## 🛠️ Build from Source
+## ⚙️ Device-Specific Setup Guide
 
-**Requirements:** Android Studio Hedgehog or later, JDK 17, Android SDK 26+
+Some Android manufacturers (MIUI, ColorOS, OxygenOS, OneUI) have aggressive background battery killers. To ensure DigitalPause works reliably:
+
+### 🔹 Xiaomi / Redmi / POCO (MIUI / HyperOS)
+1. Go to **Settings → Apps → Manage Apps → DigitalPause**.
+2. Enable **Autostart**.
+3. Set **Battery Saver** to **No Restrictions**.
+4. Lock DigitalPause in the Recent Apps tray.
+
+### 🔹 OPPO / Realme / OnePlus (ColorOS / OxygenOS)
+1. Go to **Settings → Apps → App Management → DigitalPause**.
+2. Tap **Battery Usage** → Allow **Background activity** and **Auto-launch**.
+3. Under **Special app access**, ensure **Display over other apps** and **Usage access** are Allowed.
+
+### 🔹 Samsung (One UI)
+1. Go to **Settings → Battery and device care → Battery → Background usage limits**.
+2. Add **DigitalPause** to **Never sleeping apps**.
+
+---
+
+## 🛠️ Building from Source
+
+If you prefer to build the APK yourself:
+
+### Prerequisites:
+- Android Studio Ladybug / Hedgehog or newer
+- JDK 17 or higher
+- Android SDK 26+
 
 ```bash
-# Clone the repo
+# 1. Clone the repository
 git clone https://github.com/Naseem2917/DigitalPause.git
 cd DigitalPause
 
-# Build debug APK
+# 2. Build Debug APK
 ./gradlew assembleDebug
 
-# Install on connected device
+# 3. The compiled APK will be located at:
+# app/build/outputs/apk/debug/app-debug.apk
+
+# 4. Install directly to a connected USB device:
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
 ---
 
-## 📋 Permissions Setup (After Install)
+## 🗺️ Future Roadmap
 
-The app will guide you, but here's what to do manually:
-
-1. **Usage Access** — Settings → Digital Wellbeing & Parental Controls → No app access to usage data → DigitalPause → Allow
-2. **Accessibility** — Settings → Accessibility → Installed services → DigitalPause → ON
-3. **Display over other apps** — Settings → Apps → DigitalPause → Display over other apps → Allow
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Focus Mode (block all distracting apps for a session)
-- [ ] Bedtime Mode (auto-lock apps after a set time)
-- [ ] Weekly/Monthly usage reports (export PDF)
-- [ ] Widget for home screen
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! Please read the issues page first and check if your idea is already planned.
+- [ ] Focus Sessions (Pomodoro timer with blocklist)
+- [ ] Bedtime Wind-Down mode (grayscale & auto-lock)
+- [ ] Daily screen time goal notification
+- [ ] Home screen quick-stats widget
 
 ---
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
-
----
+This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-Made with ❤️ for mindful digital habits
+Made with ❤️ for mindful digital habits.
 
-**[⭐ Star this repo](https://github.com/Naseem2917/DigitalPause) · [🐛 Report a Bug](https://github.com/Naseem2917/DigitalPause/issues) · [💡 Request a Feature](https://github.com/Naseem2917/DigitalPause/issues)**
+**[⭐ Star on GitHub](https://github.com/Naseem2917/DigitalPause) • [🐛 Report Bug](https://github.com/Naseem2917/DigitalPause/issues) • [📥 Download APK](https://github.com/Naseem2917/DigitalPause/releases/latest)**
 
 </div>
