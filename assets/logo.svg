@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect x="32" y="32" width="448" height="448" rx="110" fill="#4338CA" />
+  <!-- Teal Circle Ring -->
+  <circle cx="256" cy="256" r="126" stroke="#86F2E4" stroke-width="12" fill="none" opacity="0.9" />
+  <!-- Teal Dot -->
+  <circle cx="256" cy="155" r="8" fill="#86F2E4" />
+  <!-- White Pause Bars -->
+  <rect x="200" y="207" width="28" height="110" rx="14" fill="#FFFFFF" />
+  <rect x="284" y="207" width="28" height="110" rx="14" fill="#FFFFFF" />
+</svg>
